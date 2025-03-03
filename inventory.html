@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory - Premium Auto Luxury Car Dealership</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Premium<span>Auto</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" class="active">Inventory</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#contact" class="btn-primary">Contact Us</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Inventory Hero Section -->
+    <section class="inventory-hero">
+        <div class="container">
+            <div class="inventory-hero-content">
+                <h1>Our Exclusive Collection</h1>
+                <p>Browse our handpicked selection of the world's finest automobiles</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Filter Section -->
+    <section class="inventory-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="make-filter">Make</label>
+                    <select id="make-filter">
+                        <option value="all">All Makes</option>
+                        <option value="aston-martin">Aston Martin</option>
+                        <option value="bentley">Bentley</option>
+                        <option value="ferrari">Ferrari</option>
+                        <option value="lamborghini">Lamborghini</option>
+                        <option value="mclaren">McLaren</option>
+                        <option value="mercedes">Mercedes-Benz</option>
+                        <option value="porsche">Porsche</option>
+                        <option value="rolls-royce">Rolls-Royce</option>
+                        <option value="range-rover">Range Rover</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="type-filter">Type</label>
+                    <select id="type-filter">
+                        <option value="all">All Types</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="suv">SUV</option>
+                        <option value="sports">Sports</option>
+                        <option value="luxury">Luxury</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-filter">Price Range</label>
+                    <select id="price-filter">
+                        <option value="all">All Prices</option>
+                        <option value="100-200">£100,000 - £200,000</option>
+                        <option value="200-300">£200,000 - £300,000</option>
+                        <option value="300-500">£300,000 - £500,000</option>
+                        <option value="500-1000">£500,000 - £1,000,000</option>
+                        <option value="1000+">£1,000,000+</option>
+                    </select>
+                </div>
+                <button class="btn-primary filter-button">Apply Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Listing Section -->
+    <section class="inventory-listing">
+        <div class="container">
+            <div class="inventory-grid">
+                <!-- Car Card 1 -->
+                <div class="car-card" data-category="luxury suv">
+                    <div class="car-image">
+                        <img src="images/cars/Rolls Royce Cullinan Black Badge/image 1.webp" alt="Rolls-Royce Cullinan Black Badge">
+                        <div class="car-tag">Featured</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Rolls-Royce Cullinan Black Badge</h3>
+                        <div class="car-price">£495,000</div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar-alt"></i> 2023</span>
+                            <span><i class="fas fa-road"></i> 1,200 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <div class="car-actions">
+                            <a href="car-detail.html?id=1" class="btn-details">View Details</a>
+                            <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 2 -->
+                <div class="car-card" data-category="sports luxury">
+                    <div class="car-image">
+                        <img src="images/cars/Ferrari SF90 Stradale/image 1.webp" alt="Ferrari SF90 Stradale">
+                        <div class="car-tag">New Arrival</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Ferrari SF90 Stradale</h3>
+                        <div class="car-price">£675,000</div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                            <span><i class="fas fa-road"></i> 950 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                        </div>
+                        <div class="car-actions">
+                            <a href="car-detail.html?id=2" class="btn-details">View Details</a>
+                            <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 3 -->
+                <div class="car-card" data-category="sports">
+                    <div class="car-image">
+                        <img src="images/cars/Lamborghini Aventador LP780-4 Ultimae Roadster/image 1.webp" alt="Lamborghini Aventador LP780-4 Ultimae Roadster">
+                        <div class="car-tag">Limited</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Lamborghini Aventador LP780-4 Ultimae Roadster</h3>
+                        <div class="car-price">£825,000</div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                            <span><i class="fas fa-road"></i> 500 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <div class="car-actions">
+                            <a href="car-detail.html?id=3" class="btn-details">View Details</a>
+                            <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 4 -->
+                <div class="car-card" data-category="sports">
+                    <div class="car-image">
+                        <img src="images/cars/Lamborghini Huracan Tecnica/image 1.webp" alt="Lamborghini Huracan Tecnica">
+                    </div>
+                    <div class="car-details">
+                        <h3>Lamborghini Huracan Tecnica</h3>
+                        <div class="car-price">£245,000</div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar-alt"></i> 2023</span>
+                            <span><i class="fas fa-road"></i> 800 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <div class="car-actions">
+                            <a href="car-detail.html?id=4" class="btn-details">View Details</a>
+                            <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 5 -->
+                <div class="car-card" data-category="suv">
+                    <div class="car-image">
+                        <img src="images/cars/Mercedes-Benz AMG G63/image 1.webp" alt="Mercedes-Benz AMG G63">
+                    </div>
+                    <div class="car-details">
+                        <h3>Mercedes-Benz AMG G63</h3>
+                        <div class="car-price">£225,000</div>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar-alt"></i> 2023</span>
+                            <span><i class="fas fa-road"></i> 1,500 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <div class="car-actions">
+                            <a href="car-detail.html?id=5" class="btn-details">View Details</a>
+                            <button class="btn-favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 6 -->
+                <div class="car-card" data-category="sports luxury">
+                    <div class="car-image">
+                        <img src="images/cars/Ferrari 488 GTB/image 1.webp" alt="Ferrari 488 GTB">
+                    </div>
+                    <div class="car-details">
+                        <h3>Ferrari 488 GTB</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                            <span><i class="fas fa-road"></i> 750 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">£395,000</span>
+                            <a href="car-detail.html?id=6" class="btn-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional cars from index.html -->
+                <!-- Car Card 7 -->
+                <div class="car-card" data-category="sports">
+                    <div class="car-image">
+                        <img src="images/cars/Porsche 911 992 Turbo S/image 1.webp" alt="Porsche 911 992 Turbo S">
+                    </div>
+                    <div class="car-details">
+                        <h3>Porsche 911 992 Turbo S</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                            <span><i class="fas fa-road"></i> 1,200 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">£195,000</span>
+                            <a href="car-detail.html?id=7" class="btn-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 8 -->
+                <div class="car-card" data-category="suv luxury">
+                    <div class="car-image">
+                        <img src="images/cars/Land Rover Range Rover SV 4.4 P530 V8/image 1.webp" alt="Land Rover Range Rover SV 4.4 P530 V8">
+                    </div>
+                    <div class="car-details">
+                        <h3>Land Rover Range Rover SV 4.4 P530 V8</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar-alt"></i> 2023</span>
+                            <span><i class="fas fa-road"></i> 500 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">£215,000</span>
+                            <a href="car-detail.html?id=8" class="btn-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 9 -->
+                <div class="car-card" data-category="sports">
+                    <div class="car-image">
+                        <img src="https://www.amarisupercars.com/blobs/stock/1241585/images/i9e8e571-d826-4a87-82da-b40ad7d506db.jpg?width=2000&height=1333" alt="Ferrari 296 GTB">
+                        <div class="car-tag">New Arrival</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Ferrari 296 GTB</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 350 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">£375,000</span>
+                            <a href="car-detail.html?id=9" class="btn-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 10 -->
+                <div class="car-card" data-category="suv luxury">
+                    <div class="car-image">
+                        <img src="https://www.amarisupercars.com/blobs/stock/1241584/images/j1e8e571-d826-4a87-82da-b40ad7d506db.jpg?width=2000&height=1333" alt="Range Rover SV Autobiography">
+                        <div class="car-tag">Featured</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Range Rover SV Autobiography</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 1,000 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">£185,000</span>
+                            <a href="car-detail.html?id=10" class="btn-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 11 -->
+                <div class="car-card" data-category="sports luxury">
+                    <div class="car-image">
+                        <img src="https://www.amarisupercars.com/blobs/stock/1241583/images/k3e8e571-d826-4a87-82da-b40ad7d506db.jpg?width=2000&height=1333" alt="Aston Martin Valkyrie">
+                        <div class="car-tag">Limited</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Aston Martin Valkyrie</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2022</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 100 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">£2,500,000</span>
+                            <a href="car-detail.html?id=11" class="btn-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 12 -->
+                <div class="car-card" data-category="sedan luxury">
+                    <div class="car-image">
+                        <img src="https://www.amarisupercars.com/blobs/stock/1241582/images/l5e8e571-d826-4a87-82da-b40ad7d506db.jpg?width=2000&height=1333" alt="Bentley Continental GT Speed">
+                        <div class="car-tag">Featured</div>
+                    </div>
+                    <div class="car-details">
+                        <h3>Bentley Continental GT Speed</h3>
+                        <div class="car-specs">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-tachometer-alt"></i> 800 mi</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">£265,000</span>
+                            <a href="car-detail.html?id=12" class="btn-details">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Premium<span>Auto</span></h2>
+                    <p>Luxury automotive excellence since 1998</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Inventory</a></li>
+                            <li><a href="index.html#services">Services</a></li>
+                            <li><a href="index.html#about">About Us</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Vehicles</h3>
+                        <ul>
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Luxury Sedans</a></li>
+                            <li><a href="#">Premium SUVs</a></li>
+                            <li><a href="#">Sports Cars</a></li>
+                            <li><a href="#">Electric Vehicles</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Financing</a></li>
+                            <li><a href="#">Maintenance</a></li>
+                            <li><a href="#">Parts & Accessories</a></li>
+                            <li><a href="#">Trade-In</a></li>
+                            <li><a href="#">Vehicle Protection</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Premium Auto Luxury Dealership. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
