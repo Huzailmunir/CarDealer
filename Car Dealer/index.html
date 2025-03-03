@@ -49,16 +49,27 @@
         </div>
     </section>
 
-    <!-- Car Cards Section -->
-    <section class="car-cards">
+    <!-- Featured Cars Section -->
+    <section class="featured-cars">
         <div class="container">
-            <h2 class="section-title">Featured Vehicles</h2>
-            <div class="car-grid">
+            <div class="section-header">
+                <h2>Featured Cars</h2>
+                <p>Explore our collection of premium vehicles</p>
+            </div>
+            
+            <div class="car-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+                <button class="filter-btn" data-filter="suv">SUV</button>
+            </div>
+            
+            <div class="cars-grid">
                 <!-- Car Card 1 -->
-                <div class="car-card">
+                <div class="car-card" data-category="luxury">
                     <div class="car-image">
                         <img src="images/cars/rolls-royce-cullinan-black-badge/image 1.webp" alt="Rolls-Royce Cullinan Black Badge">
-                        <div class="car-tag">Featured</div>
+                        <span class="car-tag">Featured</span>
                     </div>
                     <div class="car-details">
                         <h3>Rolls-Royce Cullinan Black Badge</h3>
@@ -76,10 +87,10 @@
                 </div>
                 
                 <!-- Car Card 2 -->
-                <div class="car-card">
+                <div class="car-card" data-category="sports">
                     <div class="car-image">
                         <img src="images/cars/ferrari-sf90-stradale/image 1.webp" alt="Ferrari SF90 Stradale">
-                        <div class="car-tag">New Arrival</div>
+                        <span class="car-tag">New Arrival</span>
                     </div>
                     <div class="car-details">
                         <h3>Ferrari SF90 Stradale</h3>
@@ -97,10 +108,10 @@
                 </div>
                 
                 <!-- Car Card 3 -->
-                <div class="car-card">
+                <div class="car-card" data-category="sports">
                     <div class="car-image">
                         <img src="images/cars/lamborghini-aventador-lp780-4-ultimae-roadster/image 1.webp" alt="Lamborghini Aventador LP780-4 Ultimae Roadster">
-                        <div class="car-tag">Limited</div>
+                        <span class="car-tag">Limited</span>
                     </div>
                     <div class="car-details">
                         <h3>Lamborghini Aventador LP780-4 Ultimae Roadster</h3>
@@ -118,9 +129,10 @@
                 </div>
                 
                 <!-- Car Card 4 -->
-                <div class="car-card">
+                <div class="car-card" data-category="sports">
                     <div class="car-image">
                         <img src="images/cars/lamborghini-huracan-tecnica/image 1.webp" alt="Lamborghini Huracan Tecnica">
+                        <span class="car-tag">Featured</span>
                     </div>
                     <div class="car-details">
                         <h3>Lamborghini Huracan Tecnica</h3>
@@ -138,9 +150,10 @@
                 </div>
                 
                 <!-- Car Card 5 -->
-                <div class="car-card">
+                <div class="car-card" data-category="suv">
                     <div class="car-image">
                         <img src="images/cars/mercedes-benz-amg-g63/image 1.webp" alt="Mercedes-Benz AMG G63">
+                        <span class="car-tag">Popular</span>
                     </div>
                     <div class="car-details">
                         <h3>Mercedes-Benz AMG G63</h3>
@@ -158,9 +171,10 @@
                 </div>
                 
                 <!-- Car Card 6 -->
-                <div class="car-card">
+                <div class="car-card" data-category="sports">
                     <div class="car-image">
                         <img src="images/cars/ferrari-488-gtb/image 1.webp" alt="Ferrari 488 GTB">
+                        <span class="car-tag">Featured</span>
                     </div>
                     <div class="car-details">
                         <h3>Ferrari 488 GTB</h3>
@@ -178,9 +192,10 @@
                 </div>
                 
                 <!-- Car Card 7 -->
-                <div class="car-card">
+                <div class="car-card" data-category="sports">
                     <div class="car-image">
                         <img src="images/cars/porsche-911-992-turbo-s/image 1.webp" alt="Porsche 911 992 Turbo S">
+                        <span class="car-tag">New Arrival</span>
                     </div>
                     <div class="car-details">
                         <h3>Porsche 911 992 Turbo S</h3>
@@ -198,9 +213,10 @@
                 </div>
                 
                 <!-- Car Card 8 -->
-                <div class="car-card">
+                <div class="car-card" data-category="luxury suv">
                     <div class="car-image">
                         <img src="images/cars/land-rover-range-rover-sv-p530-v8/image 1.webp" alt="Land Rover Range Rover SV 4.4 P530 V8">
+                        <span class="car-tag">Featured</span>
                     </div>
                     <div class="car-details">
                         <h3>Land Rover Range Rover SV 4.4 P530 V8</h3>
@@ -216,6 +232,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            
+            <div class="view-all">
+                <a href="inventory.html" class="btn-primary">View All Cars</a>
             </div>
         </div>
     </section>

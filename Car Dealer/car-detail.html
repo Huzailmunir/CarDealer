@@ -14,6 +14,7 @@
         /* Additional Car Detail Page Specific Styles */
         .gallery-main {
             height: 400px;
+            margin-bottom: 10px;
         }
         
         .gallery-main .swiper-slide {
@@ -21,12 +22,31 @@
         }
         
         .gallery-main .swiper-slide img {
+            width: 100%;
             height: 100%;
             object-fit: cover;
         }
         
+        .gallery-thumbs {
+            height: 100px;
+            margin-top: 10px;
+        }
+        
         .gallery-thumbs .swiper-slide {
+            height: 100%;
             cursor: pointer;
+            opacity: 0.4;
+            transition: opacity 0.3s;
+        }
+        
+        .gallery-thumbs .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+        
+        .gallery-thumbs .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         
         .gallery-controls {
@@ -59,6 +79,40 @@
             display: flex;
             align-items: center;
             font-weight: 500;
+        }
+        
+        .fullscreen-gallery {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+        }
+        
+        .fullscreen-gallery .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .fullscreen-gallery img {
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain;
+        }
+        
+        .close-fullscreen {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1001;
         }
         
         .fullscreen-gallery .swiper-button-next,
@@ -304,11 +358,11 @@
                     "Illuminated Fascia"
                 ],
                 images: [
-                    "images/cars/Rolls Royce Cullinan Black Badge/image 1.webp",
-                    "images/cars/Rolls Royce Cullinan Black Badge/image 2.webp",
-                    "images/cars/Rolls Royce Cullinan Black Badge/image 3.webp",
-                    "images/cars/Rolls Royce Cullinan Black Badge/image 4.webp",
-                    "images/cars/Rolls Royce Cullinan Black Badge/image 5.webp"
+                    "images/cars/rolls-royce-cullinan-black-badge/image 1.webp",
+                    "images/cars/rolls-royce-cullinan-black-badge/image 2.webp",
+                    "images/cars/rolls-royce-cullinan-black-badge/image 3.webp",
+                    "images/cars/rolls-royce-cullinan-black-badge/image 4.webp",
+                    "images/cars/rolls-royce-cullinan-black-badge/image 5.webp"
                 ]
             },
             {
@@ -332,11 +386,11 @@
                     "Electric-only Range of 16 miles"
                 ],
                 images: [
-                    "images/cars/Ferrari SF90 Stradale/image 1.webp",
-                    "images/cars/Ferrari SF90 Stradale/image 2.webp",
-                    "images/cars/Ferrari SF90 Stradale/image 3.webp",
-                    "images/cars/Ferrari SF90 Stradale/image 4.webp",
-                    "images/cars/Ferrari SF90 Stradale/image 5.webp"
+                    "images/cars/ferrari-sf90-stradale/image 1.webp",
+                    "images/cars/ferrari-sf90-stradale/image 2.webp",
+                    "images/cars/ferrari-sf90-stradale/image 3.webp",
+                    "images/cars/ferrari-sf90-stradale/image 4.webp",
+                    "images/cars/ferrari-sf90-stradale/image 5.webp"
                 ]
             },
             {
@@ -360,11 +414,11 @@
                     "Limited to 600 Units Worldwide"
                 ],
                 images: [
-                    "images/cars/Lamborghini Aventador LP780-4 Ultimae Roadster/image 1.webp",
-                    "images/cars/Lamborghini Aventador LP780-4 Ultimae Roadster/image 2.webp",
-                    "images/cars/Lamborghini Aventador LP780-4 Ultimae Roadster/image 3.webp",
-                    "images/cars/Lamborghini Aventador LP780-4 Ultimae Roadster/image 4.webp",
-                    "images/cars/Lamborghini Aventador LP780-4 Ultimae Roadster/image 5.webp"
+                    "images/cars/lamborghini-aventador-lp780-4-ultimae-roadster/image 1.webp",
+                    "images/cars/lamborghini-aventador-lp780-4-ultimae-roadster/image 2.webp",
+                    "images/cars/lamborghini-aventador-lp780-4-ultimae-roadster/image 3.webp",
+                    "images/cars/lamborghini-aventador-lp780-4-ultimae-roadster/image 4.webp",
+                    "images/cars/lamborghini-aventador-lp780-4-ultimae-roadster/image 5.webp"
                 ]
             },
             {
@@ -388,11 +442,11 @@
                     "Lamborghini Infotainment System"
                 ],
                 images: [
-                    "images/cars/Lamborghini Huracan Tecnica/image 1.webp",
-                    "images/cars/Lamborghini Huracan Tecnica/image 2.webp",
-                    "images/cars/Lamborghini Huracan Tecnica/image 3.webp",
-                    "images/cars/Lamborghini Huracan Tecnica/image 4.webp",
-                    "images/cars/Lamborghini Huracan Tecnica/image 5.webp"
+                    "images/cars/lamborghini-huracan-tecnica/image 1.webp",
+                    "images/cars/lamborghini-huracan-tecnica/image 2.webp",
+                    "images/cars/lamborghini-huracan-tecnica/image 3.webp",
+                    "images/cars/lamborghini-huracan-tecnica/image 4.webp",
+                    "images/cars/lamborghini-huracan-tecnica/image 5.webp"
                 ]
             },
             {
@@ -416,11 +470,11 @@
                     "AMG Carbon Fiber Trim"
                 ],
                 images: [
-                    "images/cars/Mercedes-Benz AMG G63/image 1.webp",
-                    "images/cars/Mercedes-Benz AMG G63/image 2.webp",
-                    "images/cars/Mercedes-Benz AMG G63/image 3.webp",
-                    "images/cars/Mercedes-Benz AMG G63/image 4.webp",
-                    "images/cars/Mercedes-Benz AMG G63/image 5.webp"
+                    "images/cars/mercedes-benz-amg-g63/image 1.webp",
+                    "images/cars/mercedes-benz-amg-g63/image 2.webp",
+                    "images/cars/mercedes-benz-amg-g63/image 3.webp",
+                    "images/cars/mercedes-benz-amg-g63/image 4.webp",
+                    "images/cars/mercedes-benz-amg-g63/image 5.webp"
                 ]
             },
             {
@@ -444,11 +498,11 @@
                     "Ferrari Infotainment System"
                 ],
                 images: [
-                    "images/cars/Ferrari 488 GTB/image 1.webp",
-                    "images/cars/Ferrari 488 GTB/image 2.webp",
-                    "images/cars/Ferrari 488 GTB/image 3.webp",
-                    "images/cars/Ferrari 488 GTB/image 4.webp",
-                    "images/cars/Ferrari 488 GTB/image 5.webp"
+                    "images/cars/ferrari-488-gtb/image 1.webp",
+                    "images/cars/ferrari-488-gtb/image 2.webp",
+                    "images/cars/ferrari-488-gtb/image 3.webp",
+                    "images/cars/ferrari-488-gtb/image 4.webp",
+                    "images/cars/ferrari-488-gtb/image 5.webp"
                 ]
             },
             {
@@ -472,11 +526,11 @@
                     "Adaptive Aerodynamics"
                 ],
                 images: [
-                    "images/cars/Porsche 911 992 Turbo S/image 1.webp",
-                    "images/cars/Porsche 911 992 Turbo S/image 2.webp",
-                    "images/cars/Porsche 911 992 Turbo S/image 3.webp",
-                    "images/cars/Porsche 911 992 Turbo S/image 4.webp",
-                    "images/cars/Porsche 911 992 Turbo S/image 5.webp"
+                    "images/cars/porsche-911-992-turbo-s/image 1.webp",
+                    "images/cars/porsche-911-992-turbo-s/image 2.webp",
+                    "images/cars/porsche-911-992-turbo-s/image 3.webp",
+                    "images/cars/porsche-911-992-turbo-s/image 4.webp",
+                    "images/cars/porsche-911-992-turbo-s/image 5.webp"
                 ]
             },
             {
@@ -500,11 +554,11 @@
                     "SV Bespoke Commissioning"
                 ],
                 images: [
-                    "images/cars/Land Rover Range Rover SV 4.4 P530 V8/image 1.webp",
-                    "images/cars/Land Rover Range Rover SV 4.4 P530 V8/image 2.webp",
-                    "images/cars/Land Rover Range Rover SV 4.4 P530 V8/image 3.webp",
-                    "images/cars/Land Rover Range Rover SV 4.4 P530 V8/image 4.webp",
-                    "images/cars/Land Rover Range Rover SV 4.4 P530 V8/image 5.webp"
+                    "images/cars/land-rover-range-rover-sv-p530-v8/image 1.webp",
+                    "images/cars/land-rover-range-rover-sv-p530-v8/image 2.webp",
+                    "images/cars/land-rover-range-rover-sv-p530-v8/image 3.webp",
+                    "images/cars/land-rover-range-rover-sv-p530-v8/image 4.webp",
+                    "images/cars/land-rover-range-rover-sv-p530-v8/image 5.webp"
                 ]
             }
         ];
@@ -529,11 +583,7 @@
 
         // Populate features
         const featuresContainer = document.getElementById('car-features');
-        car.features.forEach(feature => {
-            const li = document.createElement('li');
-            li.innerHTML = `<i class="fas fa-check"></i> ${feature}`;
-            featuresContainer.appendChild(li);
-        });
+        featuresContainer.innerHTML = car.features.map(feature => `<li><i class="fas fa-check"></i> ${feature}</li>`).join('');
 
         // Update total slides counter
         document.getElementById('total-slides').textContent = car.images.length;
@@ -543,51 +593,70 @@
         const thumbsGalleryWrapper = document.querySelector('.gallery-thumbs .swiper-wrapper');
         const fullscreenGalleryWrapper = document.querySelector('.fullscreen-swiper .swiper-wrapper');
 
+        // Clear existing slides
+        mainGalleryWrapper.innerHTML = '';
+        thumbsGalleryWrapper.innerHTML = '';
+        fullscreenGalleryWrapper.innerHTML = '';
+
+        // Add new slides
         car.images.forEach(image => {
             // Main gallery
-            const mainSlide = document.createElement('div');
-            mainSlide.className = 'swiper-slide';
-            mainSlide.innerHTML = `<img src="${image}" alt="${car.title}">`;
-            mainGalleryWrapper.appendChild(mainSlide);
+            mainGalleryWrapper.innerHTML += `
+                <div class="swiper-slide">
+                    <img src="${image}" alt="${car.title}">
+                </div>
+            `;
             
             // Thumbs gallery
-            const thumbSlide = document.createElement('div');
-            thumbSlide.className = 'swiper-slide';
-            thumbSlide.innerHTML = `<img src="${image}" alt="${car.title}">`;
-            thumbsGalleryWrapper.appendChild(thumbSlide);
+            thumbsGalleryWrapper.innerHTML += `
+                <div class="swiper-slide">
+                    <img src="${image}" alt="${car.title}">
+                </div>
+            `;
             
             // Fullscreen gallery
-            const fullscreenSlide = document.createElement('div');
-            fullscreenSlide.className = 'swiper-slide';
-            fullscreenSlide.innerHTML = `<img src="${image}" alt="${car.title}">`;
-            fullscreenGalleryWrapper.appendChild(fullscreenSlide);
+            fullscreenGalleryWrapper.innerHTML += `
+                <div class="swiper-slide">
+                    <img src="${image}" alt="${car.title}">
+                </div>
+            `;
         });
 
-        // Initialize Swiper
-        const galleryThumbs = new Swiper('.gallery-thumbs', {
+        // Initialize Swiper instances after adding slides
+        const thumbsGallery = new Swiper('.gallery-thumbs', {
             spaceBetween: 10,
             slidesPerView: 4,
             freeMode: true,
             watchSlidesProgress: true,
         });
-        
-        const galleryMain = new Swiper('.gallery-main', {
+
+        const mainGallery = new Swiper('.gallery-main', {
             spaceBetween: 10,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
             thumbs: {
-                swiper: galleryThumbs
+                swiper: thumbsGallery
             },
             on: {
                 slideChange: function() {
-                    // Update current slide counter
                     document.getElementById('current-slide').textContent = this.activeIndex + 1;
                 }
             }
         });
-        
+
+        // Gallery controls
+        document.querySelector('.gallery-prev').addEventListener('click', () => {
+            mainGallery.slidePrev();
+        });
+
+        document.querySelector('.gallery-next').addEventListener('click', () => {
+            mainGallery.slideNext();
+        });
+
+        // Fullscreen functionality
+        const fullscreenGallery = document.querySelector('.fullscreen-gallery');
         const fullscreenSwiper = new Swiper('.fullscreen-swiper', {
             spaceBetween: 10,
             navigation: {
@@ -596,62 +665,22 @@
             }
         });
 
-        // Gallery controls
-        const galleryPrev = document.querySelector('.gallery-prev');
-        const galleryNext = document.querySelector('.gallery-next');
-        const galleryFullscreen = document.querySelector('.gallery-fullscreen');
-        
-        galleryPrev.addEventListener('click', () => {
-            galleryMain.slidePrev();
-        });
-        
-        galleryNext.addEventListener('click', () => {
-            galleryMain.slideNext();
-        });
-        
-        galleryFullscreen.addEventListener('click', () => {
-            openFullscreenGallery(galleryMain.activeIndex);
+        document.querySelector('.gallery-fullscreen').addEventListener('click', () => {
+            fullscreenGallery.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+            fullscreenSwiper.update(); // Update swiper after making it visible
         });
 
-        // Fullscreen gallery functionality
-        const fullscreenGallery = document.querySelector('.fullscreen-gallery');
-        const closeFullscreen = document.querySelector('.close-fullscreen');
-        const fullscreenPrev = document.querySelector('.fullscreen-prev');
-        const fullscreenNext = document.querySelector('.fullscreen-next');
-        
-        function openFullscreenGallery(index) {
-            fullscreenGallery.classList.add('active');
-            fullscreenSwiper.slideTo(index, 0);
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        }
-        
-        // Open fullscreen gallery when clicking on main gallery images
-        document.querySelectorAll('.gallery-main .swiper-slide img').forEach((img, index) => {
-            img.addEventListener('click', () => {
-                openFullscreenGallery(index);
-            });
+        document.querySelector('.close-fullscreen').addEventListener('click', () => {
+            fullscreenGallery.style.display = 'none';
+            document.body.style.overflow = 'auto';
         });
-        
-        // Close fullscreen gallery
-        closeFullscreen.addEventListener('click', () => {
-            fullscreenGallery.classList.remove('active');
-            document.body.style.overflow = ''; // Restore scrolling
-        });
-        
-        // Fullscreen navigation
-        fullscreenPrev.addEventListener('click', () => {
-            fullscreenSwiper.slidePrev();
-        });
-        
-        fullscreenNext.addEventListener('click', () => {
-            fullscreenSwiper.slideNext();
-        });
-        
+
         // Close fullscreen gallery with Escape key
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && fullscreenGallery.classList.contains('active')) {
-                fullscreenGallery.classList.remove('active');
-                document.body.style.overflow = '';
+            if (e.key === 'Escape' && fullscreenGallery.style.display === 'block') {
+                fullscreenGallery.style.display = 'none';
+                document.body.style.overflow = 'auto';
             }
         });
     </script>
